@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>METISOVA® MEDICAL — Inventing the improbable in medicine</title>
+<meta name="description" content="Metisova Medical — medical invention, AI-enhanced imaging, diagnostics, precision medicine, surgical intelligence and biomedical engineering.">
+<style>
+:root{
+  --bg:#070809;--panel:#101214;--ink:#f4f5f6;--muted:#9ca2a8;--line:#262a2d;
+  --accent:#e9ff48;--accent2:#c9ff22;--white:#fff;--max:1280px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:linear-gradient(180deg,rgba(7,8,9,.96),rgba(7,8,9,.72),transparent);backdrop-filter:blur(10px)}
+.logo{font-weight:900;letter-spacing:-.06em;font-size:22px}.logo sup{font-size:9px;letter-spacing:0;border:1px solid #888;border-radius:50%;padding:1px 3px;vertical-align:top;margin-left:2px}
+.navlinks{display:flex;gap:24px;font-size:12px;color:#c9cdd1;text-transform:uppercase;letter-spacing:.12em}.navlinks a:hover{color:#fff}.navcta{border:1px solid #555;padding:10px 14px;border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+.hero{min-height:100vh;display:flex;align-items:flex-end;padding:150px 0 72px;position:relative;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 42%,rgba(233,255,72,.12),transparent 22%),radial-gradient(circle at 82% 60%,rgba(120,150,255,.12),transparent 28%),linear-gradient(180deg,#080909 0%,#0a0b0c 70%,#070809 100%);z-index:-2}
+.grid{position:absolute;inset:0;opacity:.11;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:90px 90px;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 80%,transparent)}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#aeb3b8;margin-bottom:22px}.hero h1{font-size:clamp(64px,10vw,156px);line-height:.84;letter-spacing:-.075em;max-width:980px;margin:0}.hero h1 span{color:var(--accent)}.hero p{max-width:560px;color:#b3b8bc;font-size:18px;line-height:1.55;margin:30px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 20px;border-radius:999px;background:var(--accent);color:#070809;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.1em}.btn.alt{background:transparent;color:#fff;border:1px solid #4c5054}
+.hero-stat{position:absolute;right:5%;bottom:12%;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#737a80;writing-mode:vertical-rl}.hero-stat b{color:var(--accent)}
+section{padding:130px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--accent);font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px}.title{font-size:clamp(48px,7vw,94px);line-height:.92;letter-spacing:-.065em;margin:0 0 30px}.lead{font-size:20px;line-height:1.5;color:#b7bcc1;max-width:780px}
+.mri{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}.visual{min-height:650px;border:1px solid var(--line);border-radius:28px;overflow:hidden;position:relative;background:#0b0d0e}.scan-ui{position:absolute;inset:20px;z-index:2;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-start;font:10px ui-monospace,monospace;color:#aeb5ba;letter-spacing:.1em}.scan-label{border:1px solid #3b4044;border-radius:4px;padding:8px;background:#090a0bcc}.brain{position:absolute;inset:10%;display:grid;place-items:center}.brain svg{width:90%;height:90%;filter:drop-shadow(0 0 30px rgba(233,255,72,.08))}.slice-ring{fill:none;stroke:#6d7377;stroke-width:1}.slice{fill:#1a1d1f;stroke:#8c9295;stroke-width:1}.matter{fill:#d6d8da}.dark{fill:#121416}.highlight{fill:#b7ff3c;opacity:.7}.scanline{position:absolute;left:0;right:0;height:1px;background:var(--accent);box-shadow:0 0 18px var(--accent);top:20%;animation:scan 4s linear infinite}@keyframes scan{0%{top:12%}100%{top:88%}}
+.product-card{border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#121517,#0b0d0e);padding:38px;display:flex;flex-direction:column;justify-content:space-between}.tag{display:inline-flex;border:1px solid #4b5054;border-radius:999px;padding:8px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.14em;width:max-content}.product-card h3{font-size:52px;line-height:.92;letter-spacing:-.06em;margin:26px 0}.product-card p{color:#9ea4a9;line-height:1.6}.specs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:28px}.spec{padding:18px 0;border-bottom:1px solid var(--line)}.spec:nth-child(odd){border-right:1px solid var(--line);padding-right:16px}.spec:nth-child(even){padding-left:16px}.spec b{display:block;color:#fff;font-size:14px}.spec small{color:#7e858a;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.demo{margin-top:28px;border:1px solid #3a3f43;border-radius:18px;padding:18px;background:#090a0b}.demo-row{display:flex;align-items:center;justify-content:space-between;gap:16px}.demo-screen{height:180px;border:1px solid #33383b;border-radius:12px;margin-top:16px;position:relative;overflow:hidden;background:#111}.demo-screen:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,#9da2a6 0 3%,#444 4% 8%,#17191a 9% 24%,#73777b 25% 27%,#161819 28% 40%,#9ca0a3 41% 43%,#161819 44% 100%);filter:blur(3px)}.demo-screen.enhanced:before{filter:contrast(1.7) brightness(1.15);background:radial-gradient(ellipse at center,#fff 0 2%,#666 3% 7%,#121 8% 21%,#d9 22% 25%,#101 26% 37%,#eee 38% 41%,#111 42% 100%)}.demo-screen .stamp{position:absolute;left:12px;top:10px;font:10px ui-monospace,monospace;color:#c7ff3c}.slider{width:100%}
+.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:52px}.step{padding:20px;border:1px solid var(--line);min-height:190px;border-radius:16px;background:#0d0f10}.step .num{color:#777;font:11px ui-monospace,monospace}.step h4{font-size:20px;letter-spacing:-.03em;margin:40px 0 10px}.step p{font-size:13px;color:#8f969b;line-height:1.5}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:50px}.p{border:1px solid var(--line);border-radius:22px;padding:30px;min-height:280px;position:relative;overflow:hidden;background:#0c0e0f;transition:.35s}.p:hover{transform:translateY(-5px);border-color:#555}.p:after{content:"↗";position:absolute;right:25px;top:25px;color:#666}.p h3{font-size:34px;letter-spacing:-.05em;margin:55px 0 10px}.p p{color:#90979c;line-height:1.55;max-width:500px}.p .stage{font:10px ui-monospace,monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.12em}
+.invest{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.bigquote{font-size:clamp(44px,6vw,82px);line-height:.94;letter-spacing:-.07em;margin:0}.bigquote span{color:var(--accent)}.invest-card{border:1px solid var(--line);padding:30px;border-radius:22px;background:#0d0f10}.invest-card p{color:#9ba1a6;line-height:1.6}.mini-list{list-style:none;padding:0;margin:24px 0}.mini-list li{padding:12px 0;border-bottom:1px solid var(--line);font-size:13px}.mini-list li:before{content:"+";color:var(--accent);margin-right:12px}
+.footer{padding:50px 0 70px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:30px;color:#7d8489;font-size:12px}.footer b{color:#fff}.notice{font-size:10px;line-height:1.6;color:#656b70;max-width:700px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{display:none}.mri,.invest{grid-template-columns:1fr}.products{grid-template-columns:1fr}.arch{grid-template-columns:1fr 1fr}.hero{padding-top:120px}.hero-stat{display:none}.visual{min-height:500px}.title{font-size:56px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#top">METISOVA<sup>®</sup></a>
+  <div class="navlinks">
+    <a href="#mri">MRI</a><a href="#platform">Platform</a><a href="#portfolio">Portfolio</a><a href="#investors">Investors</a>
+  </div>
+  <a class="navcta" href="#contact">Talk to us ↗</a>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="kicker">METISOVA MEDICAL · INVENTION · INNOVATION · SCALE</div>
+    <h1>Medicine,<br><span>re-engineered.</span></h1>
+    <p>We invent medical technologies for problems that look impossibly hard — from intelligent imaging and diagnostics to surgical AI, precision medicine and biomedical devices.</p>
+    <div class="hero-actions"><a class="btn" href="#mri">Explore the flagship</a><a class="btn alt" href="#portfolio">View the pipeline</a></div>
+  </div>
+  <div class="hero-stat">RESEARCH → DISCOVERY → INVENTION → PRODUCT → <b>SCALE</b></div>
+</section>
+
+<section id="mri">
+<div class="wrap">
+  <div class="eyebrow reveal">01 · FLAGSHIP R&D</div>
+  <h2 class="title reveal">Make constrained<br>MRI more capable.</h2>
+  <p class="lead reveal">The AI-Enhanced MRI concept combines scanner-compatible acquisition, computational reconstruction, artifact correction and clinical AI into a new layer between the scanner and the radiologist.</p>
+  <div class="mri">
+    <div class="visual reveal">
+      <div class="scan-ui"><span class="scan-label">NEURO / BRAIN · SIMULATED</span><span class="scan-label">METISOVA MEDICAL · R&D</span></div>
+      <div class="brain">
+        <svg viewBox="0 0 600 600" aria-label="Stylized simulated brain MRI">
+          <circle class="slice-ring" cx="300" cy="300" r="245"/><circle class="slice-ring" cx="300" cy="300" r="218"/>
+          <ellipse class="slice" cx="300" cy="300" rx="195" ry="225"/>
+          <path class="matter" d="M300 96c-93 0-160 72-160 174 0 115 71 213 160 213s160-98 160-213c0-102-67-174-160-174Z"/>
+          <path class="dark" d="M300 125c-62 0-105 55-105 132 0 80 47 158 105 158s105-78 105-158c0-77-43-132-105-132Z"/>
+          <path class="matter" d="M245 151c-35 22-56 66-56 110 0 55 29 112 72 141-28-40-36-76-36-125 0-45 11-85 20-126Z"/>
+          <path class="matter" d="M355 151c35 22 56 66 56 110 0 55-29 112-72 141 28-40 36-76 36-125 0-45-11-85-20-126Z"/>
+          <path class="highlight" d="M340 230c25-20 55-9 59 18 4 27-18 45-45 35-20-7-28-35-14-53Z"/>
+          <path fill="none" stroke="#333" stroke-width="3" d="M300 110v380M170 300h260"/>
+        </svg>
+      </div>
+      <div class="scanline"></div>
+    </div>
+    <div class="product-card reveal">
+      <div><span class="tag">Concept · R&D</span><h3>THE<br>ENHANCER</h3><p>A proposed table-side hardware system designed to accept low-quality or constrained MRI outputs, process them through an AI reconstruction pipeline, and deliver an enhanced digital image for radiologist review.</p></div>
+      <div>
+        <div class="specs">
+          <div class="spec"><b>Input</b><small>Low-quality MRI</small></div><div class="spec"><b>Engine</b><small>AI reconstruction</small></div>
+          <div class="spec"><b>Output</b><small>Enhanced digital image</small></div><div class="spec"><b>Control</b><small>Clinician-in-loop</small></div>
+        </div>
+        <div class="demo">
+          <div class="demo-row"><span style="font:10px ui-monospace,monospace;color:#8c9398">SIMULATED ENHANCEMENT</span><button id="enhanceBtn" class="btn" style="border:0;cursor:pointer;padding:9px 12px">Process</button></div>
+          <div id="demoScreen" class="demo-screen"><span class="stamp">INPUT · LOW QUALITY</span></div>
+          <input id="quality" class="slider" type="range" min="0" max="100" value="25" aria-label="Simulated image quality">
+          <div style="display:flex;justify-content:space-between;font:9px ui-monospace,monospace;color:#666;margin-top:6px"><span>LOW</span><span>ENHANCED</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arch">
+    <div class="step reveal"><span class="num">01</span><h4>Acquire</h4><p>Scanner-compatible acquisition and data intake.</p></div>
+    <div class="step reveal"><span class="num">02</span><h4>Ingest</h4><p>Low-quality or constrained MRI enters the processing unit.</p></div>
+    <div class="step reveal"><span class="num">03</span><h4>Reconstruct</h4><p>AI reconstruction, denoising, artifact correction and super-resolution where validated.</p></div>
+    <div class="step reveal"><span class="num">04</span><h4>Review</h4><p>Enhanced images are surfaced in a radiologist-facing workflow.</p></div>
+    <div class="step reveal"><span class="num">05</span><h4>Learn</h4><p>Quality metrics, auditability and clinician feedback inform the R&D loop.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="platform">
+<div class="wrap">
+  <div class="eyebrow reveal">02 · THE MEDICAL INTELLIGENCE LAYER</div>
+  <h2 class="title reveal">One invention pipeline.<br>Many clinical frontiers.</h2>
+  <p class="lead reveal">Metisova Medical is designed as a medical invention company — combining medicine, AI, engineering, computation and biology rather than building a single-product identity.</p>
+  <div class="products">
+    <article class="p reveal"><div class="stage">01 · Imaging</div><h3>AI-Enhanced MRI</h3><p>Computational reconstruction intended to extract substantially more diagnostic information from constrained MRI systems.</p></article>
+    <article class="p reveal"><div class="stage">02 · Surgical AI</div><h3>Intelligent Theatre</h3><p>Perception, anatomy recognition, workflow intelligence, navigation and decision support for future operating rooms.</p></article>
+    <article class="p reveal"><div class="stage">03 · Diagnostics</div><h3>Advanced Diagnostics</h3><p>Multimodal, rapid and computational diagnostic technologies designed around sensitivity, specificity, speed and access.</p></article>
+    <article class="p reveal"><div class="stage">04 · Precision</div><h3>Computational Medicine</h3><p>Patient-specific models combining imaging, clinical information, laboratory data and — where appropriate — genomics.</p></article>
+    <article class="p reveal"><div class="stage">05 · Devices</div><h3>Biomedical Engineering</h3><p>Physical systems for diagnostic, monitoring, acquisition and intelligent clinical workflows.</p></article>
+    <article class="p reveal"><div class="stage">06 · Robotics</div><h3>Medical Robotics</h3><p>Robotic assistance, rehabilitation, teleoperation and future autonomous or semi-autonomous medical functions.</p></article>
+    <article class="p reveal"><div class="stage">07 · Infrastructure</div><h3>Digital Health</h3><p>Connected clinical data, decision support, workflow systems, security and interoperable healthcare infrastructure.</p></article>
+    <article class="p reveal"><div class="stage">08 · Biosciences</div><h3>Genomics</h3><p>Broader Metisova life-sciences R&D, including an ambitious ultra-low-cost genome sequencing research target.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="portfolio">
+<div class="wrap">
+  <div class="eyebrow reveal">03 · FROM QUESTION TO PRODUCT</div>
+  <h2 class="title reveal">Research is<br>the beginning.</h2>
+  <p class="lead reveal">The portfolio is intentionally a pipeline. Concepts become prototypes, prototypes become validated technologies, and validated technologies can become products.</p>
+  <div class="arch">
+    <div class="step reveal"><span class="num">01</span><h4>Question</h4><p>Find an important clinical problem.</p></div>
+    <div class="step reveal"><span class="num">02</span><h4>Research</h4><p>Understand the science and clinical context.</p></div>
+    <div class="step reveal"><span class="num">03</span><h4>Invent</h4><p>Build the missing technology.</p></div>
+    <div class="step reveal"><span class="num">04</span><h4>Validate</h4><p>Bench, technical and clinical evidence.</p></div>
+    <div class="step reveal"><span class="num">05</span><h4>Scale</h4><p>Regulatory pathway, manufacturing and deployment.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="investors">
+<div class="wrap">
+  <div class="eyebrow reveal">04 · FOR INVESTORS & PARTNERS</div>
+  <div class="invest">
+    <h2 class="bigquote reveal">A medical<br><span>invention engine.</span></h2>
+    <div class="invest-card reveal">
+      <p>Metisova Medical is positioned closer to a medical-technology and scientific invention company than a conventional healthcare provider. The opportunity is a portfolio of deep-tech programs connected by shared AI, engineering, data and research capabilities.</p>
+      <ul class="mini-list">
+        <li>Flagship focus: AI-Enhanced MRI</li>
+        <li>Cross-disciplinary R&D platform</li>
+        <li>Clinical partnerships and validation pathway</li>
+        <li>Long-term portfolio expansion into surgery, diagnostics, genomics and robotics</li>
+      </ul>
+      <a class="btn" href="#contact">Discuss the opportunity</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+  <div class="eyebrow reveal">05 · BUILD WITH US</div>
+  <h2 class="title reveal">Let's build what<br>medicine needs next.</h2>
+  <p class="lead reveal">Research partner. Hospital. Radiology group. Engineer. Investor. Scientist. Strategic partner.</p>
+  <div class="hero-actions reveal" style="margin-top:35px"><a class="btn" href="mailto:hello@metisova.com">hello@metisova.com ↗</a><a class="btn alt" href="mailto:hello@metisova.com?subject=Metisova%20Medical%20Partnership">Partnerships ↗</a></div>
+</div>
+</section>
+</main>
+
+<footer class="wrap footer">
+  <div><b>METISOVA<sup>®</sup> MEDICAL</b><br><span>Inventing the improbable in medicine.</span></div>
+  <div class="notice">Concepts shown on this site are R&D concepts unless explicitly stated otherwise. The AI-Enhanced MRI, genome sequencing and other technologies described are not represented as clinically validated, approved, commercialized or currently available products. Clinical claims require appropriate technical, clinical, regulatory and quality validation.</div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const btn=document.getElementById('enhanceBtn'), screen=document.getElementById('demoScreen'), slider=document.getElementById('quality');
+btn.addEventListener('click',()=>{btn.textContent='Processing…';screen.classList.add('enhanced');screen.querySelector('.stamp').textContent='OUTPUT · SIMULATED ENHANCEMENT';setTimeout(()=>btn.textContent='Re-process',900)});
+slider.addEventListener('input',e=>{
+ const v=+e.target.value;
+ screen.classList.toggle('enhanced',v>55);
+ screen.style.filter=`contrast(${1+v/120}) brightness(${.88+v/400})`;
+ screen.querySelector('.stamp').textContent=v>55?'OUTPUT · SIMULATED ENHANCEMENT':'INPUT · LOW QUALITY';
+});
+window.addEventListener('mousemove',e=>{
+ const x=e.clientX/innerWidth*100,y=e.clientY/innerHeight*100;
+ document.body.style.background=`radial-gradient(circle at ${x}% ${y}%, rgba(233,255,72,.025), transparent 22%), #070809`;
+});
+</script>
+</body>
+</html>
